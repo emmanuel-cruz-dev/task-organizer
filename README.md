@@ -4,7 +4,7 @@ Una aplicación fullstack moderna de gestión de tareas construida con las mejor
 
 ## 🚀 Descripción
 
-Task Organizer es una aplicación web para gestionar tus tareas de manera eficiente. Permite crear, organizar, editar y eliminar tareas con una interfaz moderna y intuitiva.
+Task Organizer es una aplicación web para gestionar tus tareas de manera eficiente. Permite crear, organizar, editar y eliminar tareas con una interfaz intuitiva y moderna.
 
 ## 🛠️ Tecnologías
 
@@ -81,7 +81,7 @@ task-organizer/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/task-organizer.git
+git clone https://github.com/emmanuel-cruz-dev/task-organizer.git
 cd task-organizer
 ```
 
@@ -155,25 +155,7 @@ npm start
 - `PUT /api/tasks/:id` - Actualizar tarea
 - `DELETE /api/tasks/:id` - Eliminar tarea
 
-### Utilidades
-- `GET /api/health` - Health check
-
-## 🎯 Scripts Disponibles
-
-### Backend
-- `npm run dev` - Desarrollo con nodemon
-- `npm run build` - Compilar TypeScript
-- `npm start` - Ejecutar en producción
-- `npm run clean` - Limpiar carpeta dist
-
-### Frontend
-- `npm run dev` - Servidor de desarrollo
-- `npm run build` - Build de producción
-- `npm start` - Servidor de producción
-- `npm run lint` - Ejecutar ESLint
-- `npm run type-check` - Verificar tipos TypeScript
-
-## 🔍 Testing
+<!--## 🔍 Testing
 
 ```bash
 # Backend
@@ -183,7 +165,7 @@ npm run test
 # Frontend
 cd frontend
 npm run test
-```
+``` -->
 
 ## 📝 Variables de Entorno
 
