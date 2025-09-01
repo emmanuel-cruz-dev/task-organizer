@@ -190,7 +190,7 @@ npm run test
 ### Backend (.env)
 ```env
 NODE_ENV=development|production
-PORT=5000
+PORT=3000
 MONGODB_URI=mongodb://localhost:27017/task-organizer
 JWT_SECRET=tu_jwt_secret
 JWT_EXPIRES_IN=7d
@@ -203,12 +203,12 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api
 
 ## 🚀 Deployment
 
-### Backend (Railway/Render/Heroku)
+### Backend (Render)
 1. Configurar variables de entorno
 2. Conectar repositorio
 3. La app se desplegará automáticamente
 
-### Frontend (Vercel/Netlify)
+### Frontend (Vercel)
 1. Conectar repositorio
 2. Configurar `NEXT_PUBLIC_API_URL`
 3. Deploy automático
