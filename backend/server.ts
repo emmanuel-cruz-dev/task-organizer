@@ -2,6 +2,10 @@ import express, { Request, Response, NextFunction } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
+import { connectDB } from "./src/config/database";
+
+// Connect to MongoDB
+connectDB();
 
 // Environment variables
 dotenv.config();
