@@ -2,7 +2,7 @@
 GET http://localhost:3000/api/tasks
 
 ### Traer una tarea específica
-GET http://localhost:3000/api/tasks/5f8c9c0a0b0e0c1d0d1e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z
+GET http://localhost:3000/api/tasks/68b73e71a25accccf9c58b33
 
 ### Crear una nueva tarea
 POST http://localhost:3000/api/tasks
@@ -15,14 +15,14 @@ Content-Type: application/json
 }
 
 ### Actualizar una tarea
-PUT http://localhost:3000/api/tasks/5f8c9c0a0b0e0c1d0d1e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z
+PUT http://localhost:3000/api/tasks/68b7431a07c1716c0e59b76d
 Content-Type: application/json
 
 {
-  "title": "Nueva tarea",
-  "description": "Descripción de la tarea",
-  "completed": false
+  "title": "Nueva tarea 3 actualizada",
+  "description": "Descripción de la tarea 3 actualizada",
+  "completed": true
 }
 
 ### Eliminar una tarea
-DELETE http://localhost:3000/api/tasks/5f8c9c0a0b0e0c1d0d1e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z
+DELETE http://localhost:3000/api/tasks/68b73e71a25accccf9c58b33
