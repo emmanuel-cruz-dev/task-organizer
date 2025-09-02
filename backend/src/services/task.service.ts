@@ -1,4 +1,5 @@
-import Task, { ITask } from "../models/task.model";
+import Task from "../models/task.model";
+import { ITask } from "../types/types";
 
 const getAllTasks = async (): Promise<ITask[]> => {
   return await Task.find();
