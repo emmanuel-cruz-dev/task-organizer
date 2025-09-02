@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import path from "path";
 
 // Environment variables
 dotenv.config();
@@ -11,11 +12,12 @@ const PORT = process.env.PORT || 3000;
 // Middlewares
 app.use(cors());
 app.use(express.json());
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.get("/", (req, res) => {
-  res.json({ message: "Todo App Backend working! 🚀" });
+  res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
 app.get("/api/health", (req, res) => {
