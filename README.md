@@ -6,9 +6,14 @@ Una aplicación fullstack moderna de gestión de tareas construida con las mejor
 
 Task Organizer es una aplicación web para gestionar tus tareas de manera eficiente. Permite crear, organizar, editar y eliminar tareas con una interfaz intuitiva y moderna.
 
+## 🔗 Demo en vivo
+
+backend: https://task-organizer-oxzf.onrender.com/
+
 ## 🛠️ Tecnologías
 
 ### Frontend
+
 - **Next.js** - Framework React con SSR/SSG
 - **React 18** - Biblioteca para interfaces de usuario
 - **TypeScript** - JavaScript con tipado estático
@@ -18,6 +23,7 @@ Task Organizer es una aplicación web para gestionar tus tareas de manera eficie
 - **Lucide React** - Iconos modernos
 
 ### Backend
+
 - **Node.js** - Runtime de JavaScript
 - **Express.js** - Framework web minimalista
 - **TypeScript** - JavaScript con tipado estático
@@ -93,6 +99,7 @@ npm install
 ```
 
 Crear archivo `.env`:
+
 ```env
 NODE_ENV=development
 PORT=5000
@@ -109,6 +116,7 @@ npm install
 ```
 
 Crear archivo `.env.local`:
+
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ```
@@ -144,11 +152,13 @@ npm start
 ## 📡 API Endpoints
 
 ### Autenticación
+
 - `POST /api/auth/register` - Registro de usuario
 - `POST /api/auth/login` - Inicio de sesión
 - `GET /api/auth/profile` - Obtener perfil
 
 ### Tareas
+
 - `GET /api/tasks` - Obtener todas las tareas
 - `POST /api/tasks` - Crear nueva tarea
 - `GET /api/tasks/:id` - Obtener tarea específica
@@ -170,6 +180,7 @@ npm run test
 ## 📝 Variables de Entorno
 
 ### Backend (.env)
+
 ```env
 NODE_ENV=development|production
 PORT=3000
@@ -179,6 +190,7 @@ JWT_EXPIRES_IN=7d
 ```
 
 ### Frontend (.env.local)
+
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ```
@@ -186,11 +198,13 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ## 🚀 Deployment
 
 ### Backend (Render)
+
 1. Configurar variables de entorno
 2. Conectar repositorio
 3. La app se desplegará automáticamente
 
 ### Frontend (Vercel)
+
 1. Conectar repositorio
 2. Configurar `NEXT_PUBLIC_API_URL`
 3. Deploy automático
@@ -199,8 +213,10 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api
 
 Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) para detalles.
 -->
+
 ## 👨‍💻 Autor
 
 **Emmanuel Cruz**
-- Portfolio: [Emmanuel Cruz](https://emmanuel-cruz.netlify.app/)  
+
+- Portfolio: [Emmanuel Cruz](https://emmanuel-cruz.netlify.app/)
 - LinkedIn: [emmanuel-cruz-dev](https://www.linkedin.com/in/emmanuel-cruz-dev/)
