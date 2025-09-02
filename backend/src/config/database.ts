@@ -14,7 +14,6 @@ export const connectDB = async (): Promise<void> => {
   }
 };
 
-// Connection events handler
 mongoose.connection.on("disconnected", () => {
   console.log("📡 MongoDB disconnected");
 });
