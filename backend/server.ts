@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
 import { connectDB } from "./src/config/database";
+import taskRoutes from "./src/routes/task.routes";
 
 // Environment variables
 dotenv.config();
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
+app.use("/api/tasks", taskRoutes);
 
 // Handling routes not found (404)
 app.use((req, res) => {
