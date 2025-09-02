@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.get("/", (req, res) => {
-  res.json({ message: "Todo App Backend funcionando! 🚀" });
+  res.json({ message: "Todo App Backend working! 🚀" });
 });
 
 app.get("/api/health", (req, res) => {
@@ -35,10 +35,10 @@ app.use(
     next: express.NextFunction
   ) => {
     console.error(err.stack);
-    res.status(500).json({ message: "Error interno del servidor" });
+    res.status(500).json({ message: "Internal server error" });
   }
 );
 
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
