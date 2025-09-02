@@ -1,17 +1,14 @@
 import { Request, Response } from "express";
 import taskService from "../services/task.service";
-import { stat } from "fs";
 
 const getAllTasks = async (req: Request, res: Response) => {
   try {
     const tasks = await taskService.getAllTasks();
-    res
-      .status(200)
-      .json({ message: "Tasks retrieved successfully", payload: tasks });
+    res.status(200).json({ status: "OK", payload: tasks });
   } catch (error) {
     res.status(500).json({
-      message: "Error getting tasks",
-      payload: error,
+      status: "FAILED",
+      payload: error || "Error getting tasks",
     });
   }
 };
@@ -43,19 +40,25 @@ const getTaskById = async (req: Request, res: Response) => {
 const createTask = async (req: Request, res: Response) => {
   try {
     const task = await taskService.createTask(req.body);
-    res.status(201).json(task);
+    res.status(201).json({ status: "OK", payload: task });
   } catch (error) {
-    res.status(500).json({ message: "Error creating task" });
+    res
+      .status(500)
+      .json({ status: "FAILED", payload: error || "Error creating task" });
   }
 };
 
 const updateTask = async (req: Request, res: Response) => {
   try {
     const task = await taskService.updateTask(req.params.id, req.body);
+
     if (!task) {
-      return res.status(404).json({ message: "Task not found" });
+      return res
+        .status(404)
+        .json({ message: `Task with ID ${req.params.id} not found` });
     }
-    res.status(200).json(task);
+
+    res.status(200).json({ status: "OK", payload: task });
   } catch (error) {
     res.status(500).json({ message: "Error updating task" });
   }
