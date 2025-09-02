@@ -1,6 +1,5 @@
 import mongoose, { Document, Schema } from "mongoose";
 
-// Definir la interfaz para el documento de tarea
 export interface ITask extends Document {
   title: string;
   description?: string;
@@ -10,7 +9,6 @@ export interface ITask extends Document {
   updatedAt: Date;
 }
 
-// Crear el esquema
 const TaskSchema: Schema = new Schema({
   title: {
     type: String,
@@ -37,4 +35,4 @@ const TaskSchema: Schema = new Schema({
   },
 });
 
-export default mongoose.model<ITask>("Task", TaskSchema);
+export default mongoose.model<ITask>("Task", TaskSchema, "Tasks");
