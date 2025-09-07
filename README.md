@@ -220,3 +220,7 @@ Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) pa
 
 - Portfolio: [Emmanuel Cruz](https://emmanuel-cruz.netlify.app/)
 - LinkedIn: [emmanuel-cruz-dev](https://www.linkedin.com/in/emmanuel-cruz-dev/)
+
+## 🚧 Estado
+
+- En desarrollo. 
