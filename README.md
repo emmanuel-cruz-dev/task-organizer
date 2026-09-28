@@ -6,9 +6,9 @@ Una aplicación fullstack moderna de gestión de tareas construida con las mejor
 
 Task Organizer es una aplicación web para gestionar tus tareas de manera eficiente. Permite crear, organizar, editar y eliminar tareas con una interfaz intuitiva y moderna.
 
-## 🔗 Demo en vivo
+<!-- ## 🔗 Demo en vivo
 
-backend: https://task-organizer-oxzf.onrender.com/
+backend: https://task-organizer-oxzf.onrender.com/ -->
 
 ## 🛠️ Tecnologías
 
